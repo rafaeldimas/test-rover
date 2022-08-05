@@ -3,5 +3,8 @@ export default {
   coverageDirectory: 'coverage',
   moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
   testEnvironment: 'node',
-  preset: 'ts-jest'
+  preset: 'ts-jest',
+  paths: {
+    '@/*': ['src/*']
+  }
 }
