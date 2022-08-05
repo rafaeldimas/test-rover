@@ -1,5 +1,30 @@
-Test Rover
-Description
+
+# Test Rover
+
+## Instalation
+
+Clone this repository to your computer.
+After that you can run
+```
+    cd ~/path/to/repository
+    npm install
+    npm t
+```
+## Run
+
+```
+    npm run build
+    npm run start
+```
+
+## Expected output
+
+```
+1 3 N
+5 1 E
+```
+
+## Description
 We are assessing a number of things, including the design aspect of
 your solution, code hygiene, readability and code structure (how easy
 it is for another programmer to grasp what your code does),
@@ -19,7 +44,8 @@ text file. The application must run. You should provide sufficient
 evidence that your solution is complete by, as a minimum, indicating
 that it works correctly against the supplied test data. Please note
 that you will be assessed on your judgment as well as your execution.
-Problem
+
+## Problem
 A squad of robotic rovers are to be landed by NASA on a plateau on
 Mars. This plateau, which is curiously rectangular, must be navigated
 by the rovers so that their on-board cameras can get a complete view
@@ -35,7 +61,8 @@ rover spin 90 degrees left or right respectively, without moving from
 its current spot. 'M' means move forward one grid point, and maintain
 the same heading.
 Assume that the square directly North from (x, y) is (x, y+1).
-Input
+
+## Input
 The first line of input is the upper-right coordinates of the
 plateau, the lower-left coordinates are assumed to be 0,0.
 The rest of the input is information pertaining to the rovers that
@@ -47,15 +74,20 @@ spaces, corresponding to the x and y co-ordinates and the rover's
 orientation.
 Each rover will be finished sequentially, which means that the second
 rover won't start to move until the first one has finished moving.
-Output
+
+## Output
 The output for each rover should be its final co-ordinates and
 heading.
-Test Input
+## Test Input
+```
 5 5
 1 2 N
 LMLMLMLMM
 3 3 E
 MMRMMRMRRM
-Expected Output
+```
+## Expected Output
+```
 1 3 N
 5 1 E
+```
