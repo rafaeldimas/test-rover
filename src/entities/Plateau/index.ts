@@ -1,4 +1,4 @@
-import PlateauEmptyError from '@/entities/Plateau/errors/PlateauEmpty'
+import { PlateauEmptyError } from '@/entities/Plateau/errors'
 
 export type GridArea = {
   width: number,

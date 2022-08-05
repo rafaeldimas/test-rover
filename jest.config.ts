@@ -4,7 +4,7 @@ export default {
   moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
   testEnvironment: 'node',
   preset: 'ts-jest',
-  paths: {
-    '@/*': ['src/*']
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1'
   }
 }

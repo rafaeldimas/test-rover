@@ -1,1 +1,1 @@
-export * from './Plateau'
+export * from '@/entities/Plateau'
