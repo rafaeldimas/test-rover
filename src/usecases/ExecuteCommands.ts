@@ -23,13 +23,13 @@ export class ExecuteCommands {
   }
 
   private validateMovement (currentPosition: Position, gridArea: GridArea) {
-    const isMovementOrdinate = ['N', 'S'].includes(currentPosition.cardinal)
+    const isMovementOrdinate = ['N'].includes(currentPosition.cardinal)
 
     if (isMovementOrdinate && currentPosition.ordinate === gridArea.height) {
       throw new InvalidMovementError()
     }
 
-    const isMovementAbscissa = ['W', 'E'].includes(currentPosition.cardinal)
+    const isMovementAbscissa = ['E'].includes(currentPosition.cardinal)
 
     if (isMovementAbscissa && currentPosition.abscissa === gridArea.width) {
       throw new InvalidMovementError()
